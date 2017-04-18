@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/tab.css">
+
+</head>
+<body>
+<div class="js-tab tab" data-config='{
+            "triggerType" : "click",
+            "effect" : "fade",
+            "invoke" : 1 ,
+            "auto" : 3000
+        }'>
+    <ul class="tab-nav">
+        <li class="actived"><a href="javascript:void(0)">新闻</a></li>
+        <li><a href="#">娱乐</a></li>
+        <li><a href="#">电影</a></li>
+        <li><a href="#">科技</a></li>
+    </ul>
+    <div class="content-wrap">
+        <div class="content-item current"><img src="img/a.gif" height="92" width="92"/>
+        </div>
+        <div class="content-item"><img src="img/b.gif" height="92" width="92"/></div>
+        <div class="content-item"><img src="img/c.gif" height="92" width="92"/></div>
+        <div class="content-item"><img src="img/d.gif" height="92" width="92"/></div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/tab.js"></script>
+<script>
+    $(function () {
+        var tab1 = new Tab($('.js-tab').eq(0));
+
+//        Tab.init($(".js-tab"));
+//        $(".js-tab").Tab().css("background","red");
+    });
+</script>
+</body>
+</html>
